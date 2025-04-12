@@ -1,0 +1,500 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estrutura base */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.page-wrapper {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+.content-wrapper {
+    padding-top: 85px; /* Altura do header */
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header */
+header {
+    height: 85px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+nav {
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 65px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.nav-links a:hover {
+    color: #d4a574;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('assets/parallax-imagem1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -85px; /* Compensar o padding-top do body */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3.8rem;
+    line-height: 1.2;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 8px;
+    font-weight: 400;
+    margin-top: 0;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.hero h1:hover {
+    color: #d4a574;
+}
+
+/* Seções de texto */
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    color: #666;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+section h2:hover {
+    color: #d4a574;
+}
+
+.experiencia, .sobre, .gourmet {
+    padding: 0;
+    background-color: #fff;
+}
+
+.experiencia p, .sobre p, .gourmet p {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #666;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+}
+
+/* Banners */
+.banner {
+    height: 450px;
+    background-image: url('assets/parallax-imagem2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner2 {
+    background-image: url('assets/parallax-imagem3.jpg');
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.banner-text {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px 40px;
+    border-radius: 2px;
+}
+
+.banner-text h3 {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.banner-text h3:hover {
+    color: #d4a574;
+}
+
+/* Contatos */
+.contatos {
+    background-color: #fff;
+    background-image: url('assets/parallax-imagem4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    color: white;
+}
+
+.contatos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.contatos .container {
+    position: relative;
+    z-index: 1;
+}
+
+.contatos h2 {
+    color: white;
+}
+
+.mapa {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.info-contato {
+    text-align: center;
+    line-height: 2;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Horários */
+.horarios {
+    background-color: #000;
+    color: white;
+    background-image: url('assets/cafeteria.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.horarios::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.horarios .container {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    max-width: 600px;
+    border-radius: 4px;
+}
+
+.horarios h2 {
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.horarios h2:hover {
+    color: #d4a574;
+}
+
+.horarios-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.horario-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+}
+
+.dia {
+    font-weight: bold;
+    color: #d4a574;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hora {
+    color: #fff;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #666;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: Arial, sans-serif;
+}
+
+footer p {
+    margin: 3px 0;
+}
+
+/* Botão Voltar ao Topo */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #d4a574;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: #b38d61;
+    transform: translateY(-3px);
+}
+
+.back-to-top img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+
+    /* Hero */
+    .hero h1 {
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    /* Seções de texto */
+    section h2 {
+        font-size: 1.5rem;
+        padding: 0 15px;
+    }
+
+    .container {
+        padding: 40px 20px;
+    }
+
+    .experiencia p, .sobre p, .gourmet p {
+        font-size: 0.9rem;
+        padding: 0 15px;
+    }
+
+    /* Banners */
+    .banner {
+        height: 300px;
+    }
+
+    .banner-text h3 {
+        font-size: 1.5rem;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    /* Contatos */
+    .mapa iframe {
+        height: 300px;
+    }
+
+    .info-contato {
+        padding: 20px;
+    }
+
+    .info-contato p {
+        font-size: 0.9rem;
+    }
+
+    /* Horários */
+    .horarios-grid {
+        padding: 0 15px;
+    }
+
+    .horario-item {
+        padding: 12px 0;
+    }
+
+    .horario-item .dia,
+    .horario-item .hora {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Header */
+    .nav-links {
+        gap: 15px;
+    }
+
+    /* Hero */
+    .hero h1 {
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+
+    /* Seções de texto */
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Banners */
+    .banner {
+        height: 250px;
+    }
+
+    .banner-text h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Back to top */
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .back-to-top img {
+        width: 20px;
+        height: 20px;
+    }
+} 
