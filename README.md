@@ -4,6 +4,10 @@
 
 Um site elegante e responsivo para o meu portfolio, a Manhattan Coffee House, uma cafeteria especializada em cafés gourmet de alta qualidade.
 
+## 🚀 Demonstração
+
+Acesse o projeto online: [Manhattan Coffee House](https://marcellogabriell.github.io/Manhattan-Coffe/)
+
 ## 🛠️ Tecnologias Utilizadas
 
 <div align="center">
