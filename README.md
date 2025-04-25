@@ -1,7 +1,5 @@
 # Manhattan Coffee House
 
-![Manhattan Coffee House Logo](assets/logo.png)
-
 Um site elegante e responsivo para o meu portfolio, a Manhattan Coffee House, uma cafeteria especializada em cafés gourmet de alta qualidade.
 
 ## 🚀 Demonstração
